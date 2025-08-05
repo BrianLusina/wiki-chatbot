@@ -1,9 +1,9 @@
 """
 Entry point of the game
 """
-from pyweather.cli import get_command_line_args
-from pyweather.weather_api import get_weather_data
-from pyweather.utils import display_weather_info
+from chatbot.cli import get_command_line_args
+from chatbot.chat_agent import get_weather_data
+from chatbot.utils import display_weather_info
 
 
 def main() -> None:

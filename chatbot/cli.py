@@ -12,7 +12,7 @@ def get_command_line_args() -> Namespace:
         Namespace: populated namespace object
     """
     parser = argparse.ArgumentParser(
-        prog="pyweather",
+        prog="chatbot",
         description="Gets weather and temperature information for a city",
     )
 

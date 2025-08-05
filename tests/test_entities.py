@@ -1,5 +1,5 @@
 import unittest
-from pyweather.entities import WeatherData
+from chatbot.entities import WeatherData
 
 
 class WeatherDataTestCase(unittest.TestCase):
