@@ -522,22 +522,22 @@ files = [
 
 [[package]]
 name = "chainlit"
-version = "2.6.9"
+version = "2.7.1.1"
 description = "Build Conversational AI."
 optional = false
 python-versions = "<4.0.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "chainlit-2.6.9-py3-none-any.whl", hash = "sha256:8f6d449cf4f52e1fdb7afaec7421a3870cfa2247e78abaf15d0f540aecc15411"},
-    {file = "chainlit-2.6.9.tar.gz", hash = "sha256:a93c3177c1c59dee5557921f01482c003826e86c2f2f89432033e340a32a98c9"},
+    {file = "chainlit-2.7.1.1-py3-none-any.whl", hash = "sha256:914d79899e62a7e52e2b6dd71e1af8b729752d48a136ab1a1fce7856b14db689"},
+    {file = "chainlit-2.7.1.1.tar.gz", hash = "sha256:1123fc9dbe1589ccb0b98457c8a48178d5fb103dca4d9bdd56d447662824d714"},
 ]
 
 [package.dependencies]
 aiofiles = ">=23.1.0,<25.0.0"
-asyncer = ">=0.0.8,<0.0.9"
-audioop-lts = {version = "0.2.1", markers = "python_version >= \"3.13\" and python_version < \"4.0\""}
+asyncer = ">=0.0.8,<0.1.0"
+audioop-lts = {version = ">=0.2.1,<0.3.0", markers = "python_version >= \"3.13\""}
 click = ">=8.1.3,<9.0.0"
-dataclasses_json = ">=0.6.7,<0.7.0"
+dataclasses-json = ">=0.6.7,<0.7.0"
 fastapi = ">=0.116.1,<0.117"
 filetype = ">=1.2.0,<2.0.0"
 httpx = ">=0.23.0"
@@ -549,13 +549,19 @@ packaging = ">=23.1"
 pydantic = ">=2.7.2,<3"
 pyjwt = ">=2.8.0,<3.0.0"
 python-dotenv = ">=1.0.0,<2.0.0"
-python-multipart = ">=0.0.18,<0.0.19"
+python-multipart = ">=0.0.18,<1.0.0"
 python-socketio = ">=5.11.0,<6.0.0"
 starlette = ">=0.47.2"
 syncer = ">=2.0.3,<3.0.0"
 tomli = ">=2.0.1,<3.0.0"
 uvicorn = ">=0.35.0"
-watchfiles = ">=0.20.0,<0.21.0"
+watchfiles = ">=0.20.0,<1.0.0"
+
+[package.extras]
+custom-data = ["asyncpg (>=0.30.0,<1.0.0)", "azure-identity (>=1.14.1,<2.0.0)", "azure-storage-blob (>=12.24.0,<13.0.0)", "azure-storage-file-datalake (>=12.14.0,<13.0.0)", "boto3 (>=1.34.73,<2.0.0)", "google-cloud-storage (>=2.19.0,<3.0.0)", "sqlalchemy (>=2.0.28,<3.0.0)"]
+dev = ["ruff (>=0.9.0,<1.0.0)"]
+mypy = ["mypy (>=1.13,<2.0.0)", "mypy-boto3-dynamodb (>=1.34.113,<2.0.0)", "pandas-stubs (>=2.2.2,<3.0.0) ; python_version >= \"3.9\"", "types-aiofiles (>=23.1.0.5,<24.0.0)", "types-requests (>=2.31.0.2,<3.0.0)"]
+tests = ["aiosqlite (>=0.20.0,<1.0.0)", "botbuilder-core (>=4.15.0,<5.0.0)", "discord (>=2.3.2,<3.0.0)", "langchain (>=0.2.4,<0.3.0)", "llama-index (>=0.13.0,<1.0.0)", "matplotlib (>=3.7.1,<4.0.0)", "moto (>=5.0.14,<6.0.0)", "openai (>=1.11.1,<2.0.0)", "pandas (>=2.2.2,<3.0.0)", "plotly (>=5.18.0,<6.0.0)", "pytest (>=8.3.2,<9.0.0)", "pytest-asyncio (>=0.23.8,<1.0.0)", "pytest-cov (>=5.0.0,<6.0.0)", "semantic-kernel (>=1.24.0,<2.0.0)", "slack-bolt (>=1.18.1,<2.0.0)", "tenacity (>=8.4.1,<9.0.0)", "transformers (>=4.38,<5.0)"]
 
 [[package]]
 name = "charset-normalizer"
@@ -5722,4 +5728,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "25f3232a37fd38426d428ba9b3fcd3f4cfda3534f479f1569536714a296d7a2a"
+content-hash = "84b41fc7cca2e7b1a9fc495aff9345c20f13eb5204011576bd7c89889e9e177e"
