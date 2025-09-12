@@ -2060,18 +2060,18 @@ llama-parse = ">=0.5.0"
 
 [[package]]
 name = "llama-index-readers-wikipedia"
-version = "0.4.0"
+version = "0.4.1"
 description = "llama-index readers wikipedia integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_readers_wikipedia-0.4.0-py3-none-any.whl", hash = "sha256:3ec7371ff2a54cf56562abed7302a8e6a2d0c35777f7d7a7a31b4edfc53c512c"},
-    {file = "llama_index_readers_wikipedia-0.4.0.tar.gz", hash = "sha256:82399e7f5ff4b531c6150901f1ef02f73e67f09505886c7b2383a384a0e2f8e9"},
+    {file = "llama_index_readers_wikipedia-0.4.1-py3-none-any.whl", hash = "sha256:dcda8310d2c6285594de2d0d4e145c2b6ac8053c80690eb5176089b32ca75012"},
+    {file = "llama_index_readers_wikipedia-0.4.1.tar.gz", hash = "sha256:2d6f452e139ee45ac2651ad4d257cb51809872f9ff26564bb831978f80b4b806"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 
 [[package]]
 name = "llama-index-workflows"
@@ -5729,4 +5729,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "f3006a1d8d1a694f6815f934cccf3b1fb29384fa81d83d180632b2f40790b268"
+content-hash = "72c86b478523ca9a73dca8e7863f0f6cad1081c613c4c5297c08fbf129f61331"
