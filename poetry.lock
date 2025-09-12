@@ -1877,19 +1877,19 @@ python-dotenv = ">=1.0.1,<2.0.0"
 
 [[package]]
 name = "llama-index"
-version = "0.13.5"
+version = "0.14.0"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index-0.13.5-py3-none-any.whl", hash = "sha256:ef4e4bfb8d60c7a7764da140b2211d0938849da77c3a09a03c7a949aa27ed7ed"},
-    {file = "llama_index-0.13.5.tar.gz", hash = "sha256:162d64fecbb2d7060b52fe52722395a69da19f8f78b28126520303a36daa57b7"},
+    {file = "llama_index-0.14.0-py3-none-any.whl", hash = "sha256:ae9d56834744f5213d314d513cc533eade32c351acda6dae8810d5eb7fc7da76"},
+    {file = "llama_index-0.14.0.tar.gz", hash = "sha256:e6527a981f05c7279d6a985b1c2c705c1581f987440837d7629f3719c2e35f65"},
 ]
 
 [package.dependencies]
 llama-index-cli = ">=0.5.0,<0.6"
-llama-index-core = ">=0.13.5,<0.14"
+llama-index-core = ">=0.13.6,<0.15"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
 llama-index-indices-managed-llama-cloud = ">=0.4.0"
 llama-index-llms-openai = ">=0.5.0,<0.6"
@@ -1916,14 +1916,14 @@ llama-index-llms-openai = ">=0.5.0,<0.6"
 
 [[package]]
 name = "llama-index-core"
-version = "0.13.5"
+version = "0.13.6"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_core-0.13.5-py3-none-any.whl", hash = "sha256:15b2e295507bfacaff9a5b8b3455c69638b842a2bacc9e57557d080f94c16fcc"},
-    {file = "llama_index_core-0.13.5.tar.gz", hash = "sha256:46d0151d6f621e78e7f390fce46dc2034b445e08fb4eb6aab4e2508f96bf983a"},
+    {file = "llama_index_core-0.13.6-py3-none-any.whl", hash = "sha256:67bec3c06a8105cd82d83db0f8c3122f4e4d8a4b9c7a2768cced6a2686ddb331"},
+    {file = "llama_index_core-0.13.6.tar.gz", hash = "sha256:80315a6bd1f9804f48c1870eff1a0315bf9fe5a413747d53eb88a8ebb2602b97"},
 ]
 
 [package.dependencies]
@@ -5729,4 +5729,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "864e724d4a66a3d6fb6d667e1a8aa1a439981bdc8ef19809fc96cb5a0986e8b6"
+content-hash = "f3006a1d8d1a694f6815f934cccf3b1fb29384fa81d83d180632b2f40790b268"
