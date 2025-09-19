@@ -12,7 +12,7 @@ openai = "^1.107.1"
 llama-index = "^0.14.0"
 pydantic = "^2.11.7"
 llama-index-readers-wikipedia = "^0.4.1"
-chainlit = "^2.7.2"
+chainlit = "^2.8.0"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.3.8"
