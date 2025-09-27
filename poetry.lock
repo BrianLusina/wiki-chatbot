@@ -1893,19 +1893,19 @@ python-dotenv = ">=1.0.1,<2.0.0"
 
 [[package]]
 name = "llama-index"
-version = "0.14.0"
+version = "0.14.3"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index-0.14.0-py3-none-any.whl", hash = "sha256:ae9d56834744f5213d314d513cc533eade32c351acda6dae8810d5eb7fc7da76"},
-    {file = "llama_index-0.14.0.tar.gz", hash = "sha256:e6527a981f05c7279d6a985b1c2c705c1581f987440837d7629f3719c2e35f65"},
+    {file = "llama_index-0.14.3-py3-none-any.whl", hash = "sha256:bdfb42068712bd4c80015c4af41f3208b8b5ebb3115e438d14f56b476ac35e4c"},
+    {file = "llama_index-0.14.3.tar.gz", hash = "sha256:316b3d6d80a836f8bb59bac17af63289c022f56f3ed3ff82fb6f87bba6cf4091"},
 ]
 
 [package.dependencies]
 llama-index-cli = ">=0.5.0,<0.6"
-llama-index-core = ">=0.13.6,<0.15"
+llama-index-core = ">=0.14.3,<0.15"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
 llama-index-indices-managed-llama-cloud = ">=0.4.0"
 llama-index-llms-openai = ">=0.5.0,<0.6"
@@ -1915,31 +1915,31 @@ nltk = ">3.8.1"
 
 [[package]]
 name = "llama-index-cli"
-version = "0.5.0"
+version = "0.5.1"
 description = "llama-index cli"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_cli-0.5.0-py3-none-any.whl", hash = "sha256:e331ca98005c370bfe58800fa5eed8b10061d0b9c656b84a1f5f6168733a2a7b"},
-    {file = "llama_index_cli-0.5.0.tar.gz", hash = "sha256:2eb9426232e8d89ffdf0fa6784ff8da09449d920d71d0fcc81d07be93cf9369f"},
+    {file = "llama_index_cli-0.5.1-py3-none-any.whl", hash = "sha256:5429b2fd7960df7724c2955b6e6901f6fa910b7b5ecef411c979a8b545a6b7e2"},
+    {file = "llama_index_cli-0.5.1.tar.gz", hash = "sha256:0446159d85c56c29022c1c830c9886f670d5f59d69343c3c029a3b20eda1a9d8"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
 llama-index-llms-openai = ">=0.5.0,<0.6"
 
 [[package]]
 name = "llama-index-core"
-version = "0.13.6"
+version = "0.14.3"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_core-0.13.6-py3-none-any.whl", hash = "sha256:67bec3c06a8105cd82d83db0f8c3122f4e4d8a4b9c7a2768cced6a2686ddb331"},
-    {file = "llama_index_core-0.13.6.tar.gz", hash = "sha256:80315a6bd1f9804f48c1870eff1a0315bf9fe5a413747d53eb88a8ebb2602b97"},
+    {file = "llama_index_core-0.14.3-py3-none-any.whl", hash = "sha256:fc4291fbae8c6609e3367da39a85a453099476685d5a3e97b766d82d4bcce5a4"},
+    {file = "llama_index_core-0.14.3.tar.gz", hash = "sha256:ca8a473ac92fe54f2849175f6510655999852c83fa8b7d75fd3908a8863da05a"},
 ]
 
 [package.dependencies]
@@ -1952,7 +1952,7 @@ dirtyjson = ">=1.0.8,<2"
 filetype = ">=1.2.0,<2"
 fsspec = ">=2023.5.0"
 httpx = "*"
-llama-index-workflows = ">=1.0.1,<2"
+llama-index-workflows = ">=2,<3"
 nest-asyncio = ">=1.5.8,<2"
 networkx = ">=3.0"
 nltk = ">3.8.1"
@@ -1973,35 +1973,36 @@ wrapt = "*"
 
 [[package]]
 name = "llama-index-embeddings-openai"
-version = "0.5.0"
+version = "0.5.1"
 description = "llama-index embeddings openai integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_embeddings_openai-0.5.0-py3-none-any.whl", hash = "sha256:d817edb22e3ff475e8cd1833faf1147028986bc1d688f7894ef947558864b728"},
-    {file = "llama_index_embeddings_openai-0.5.0.tar.gz", hash = "sha256:ac587839a111089ea8a6255f9214016d7a813b383bbbbf9207799be1100758eb"},
+    {file = "llama_index_embeddings_openai-0.5.1-py3-none-any.whl", hash = "sha256:a2fcda3398bbd987b5ce3f02367caee8e84a56b930fdf43cc1d059aa9fd20ca5"},
+    {file = "llama_index_embeddings_openai-0.5.1.tar.gz", hash = "sha256:1c89867a48b0d0daa3d2d44f5e76b394b2b2ef9935932daf921b9e77939ccda8"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 openai = ">=1.1.0"
 
 [[package]]
 name = "llama-index-indices-managed-llama-cloud"
-version = "0.9.0"
+version = "0.9.4"
 description = "llama-index indices llama-cloud integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_indices_managed_llama_cloud-0.9.0-py3-none-any.whl", hash = "sha256:392910b84fcd479d5e728553741af4f99dac7d4c56d6f0fc8e401b23f1462d09"},
-    {file = "llama_index_indices_managed_llama_cloud-0.9.0.tar.gz", hash = "sha256:fbaadb6ae3ee712daf439aa9be367ede1f8b190018b55010d7c35375d29ce4b7"},
+    {file = "llama_index_indices_managed_llama_cloud-0.9.4-py3-none-any.whl", hash = "sha256:535a08811046803ca6ab7f8e9d510e926aa5306608b02201ad3d9d21701383bc"},
+    {file = "llama_index_indices_managed_llama_cloud-0.9.4.tar.gz", hash = "sha256:b5e00752ab30564abf19c57595a2107f5697c3b03b085817b4fca84a38ebbd59"},
 ]
 
 [package.dependencies]
+deprecated = "1.2.18"
 llama-cloud = "0.1.35"
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 
 [[package]]
 name = "llama-index-instrumentation"
@@ -2021,38 +2022,38 @@ pydantic = ">=2.11.5"
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.5.0"
+version = "0.5.6"
 description = "llama-index llms openai integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_llms_openai-0.5.0-py3-none-any.whl", hash = "sha256:fc66f3921e128d54ef8b953167f740d3d4f192d8877efd36b7276d5d6222739a"},
-    {file = "llama_index_llms_openai-0.5.0.tar.gz", hash = "sha256:0899673282c58d19a5bbf22616a01090244e308726d392a24e4649399324760f"},
+    {file = "llama_index_llms_openai-0.5.6-py3-none-any.whl", hash = "sha256:a93a897fe733a6d7b668cbc6cca546e644054ddf5497821141b2d4b5ffb6ea80"},
+    {file = "llama_index_llms_openai-0.5.6.tar.gz", hash = "sha256:92533e83be2eb321d84a01a84fb2bf4506bf684c410cd94ccb29ae6c949a27d4"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 openai = ">=1.81.0,<2"
 
 [[package]]
 name = "llama-index-readers-file"
-version = "0.5.0"
+version = "0.5.4"
 description = "llama-index readers file integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_readers_file-0.5.0-py3-none-any.whl", hash = "sha256:7fc47a9dbf11d07e78992581c20bca82b21bf336e646b4f53263f3909cb02c58"},
-    {file = "llama_index_readers_file-0.5.0.tar.gz", hash = "sha256:f324617bfc4d9b32136d25ff5351b92bc0b569a296173ee2a8591c1f886eff0c"},
+    {file = "llama_index_readers_file-0.5.4-py3-none-any.whl", hash = "sha256:135be5ddda66c5b35883911918b2d99f67a2ab010d180af5630c872ea9509d45"},
+    {file = "llama_index_readers_file-0.5.4.tar.gz", hash = "sha256:5e766f32597622e66529464101914548ad683770a0a5d2bdc9ee84eb3a110332"},
 ]
 
 [package.dependencies]
 beautifulsoup4 = ">=4.12.3,<5"
 defusedxml = ">=0.7.1"
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 pandas = "<2.3.0"
-pypdf = ">=5.1.0,<6"
+pypdf = ">=5.1.0,<7"
 striprtf = ">=0.0.26,<0.0.27"
 
 [package.extras]
@@ -2060,18 +2061,18 @@ pymupdf = ["pymupdf (>=1.23.21,<2)"]
 
 [[package]]
 name = "llama-index-readers-llama-parse"
-version = "0.5.0"
+version = "0.5.1"
 description = "llama-index readers llama-parse integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_readers_llama_parse-0.5.0-py3-none-any.whl", hash = "sha256:e63ebf2248c4a726b8a1f7b029c90383d82cdc142942b54dbf287d1f3aee6d75"},
-    {file = "llama_index_readers_llama_parse-0.5.0.tar.gz", hash = "sha256:891b21fb63fe1fe722e23cfa263a74d9a7354e5d8d7a01f2d4040a52f8d8feef"},
+    {file = "llama_index_readers_llama_parse-0.5.1-py3-none-any.whl", hash = "sha256:0d41450ed29b0c49c024e206ef6c8e662b1854e77a1c5faefed3b958be54f880"},
+    {file = "llama_index_readers_llama_parse-0.5.1.tar.gz", hash = "sha256:2b78b73faa933e30e6c69df351e4e9f36dfe2ae142e2ab3969ddd2ac48930e37"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.14"
+llama-index-core = ">=0.13.0,<0.15"
 llama-parse = ">=0.5.0"
 
 [[package]]
@@ -2091,19 +2092,23 @@ llama-index-core = ">=0.13.0,<0.15"
 
 [[package]]
 name = "llama-index-workflows"
-version = "1.2.0"
+version = "2.5.0"
 description = "An event-driven, async-first, step-based way to control the execution flow of AI applications like Agents."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_workflows-1.2.0-py3-none-any.whl", hash = "sha256:5722a7ce137e00361025768789e7e77720cd66f855791050183a3c540b6e5b8c"},
-    {file = "llama_index_workflows-1.2.0.tar.gz", hash = "sha256:f6b19f01a340a1afb1d2fd2285c9dce346e304a3aae519e6103059f5afb2609f"},
+    {file = "llama_index_workflows-2.5.0-py3-none-any.whl", hash = "sha256:9963fb634447c032a557cbedee1397c781a848d478b479970a4ea451ff156bf8"},
+    {file = "llama_index_workflows-2.5.0.tar.gz", hash = "sha256:bb49b3ac85326c5ba9ec2c11f9ebb8b01219885c0b1feeeb30a2c637d7522ecb"},
 ]
 
 [package.dependencies]
 llama-index-instrumentation = ">=0.1.0"
 pydantic = ">=2.11.5"
+typing-extensions = ">=4.6.0"
+
+[package.extras]
+server = ["starlette (>=0.39.0)", "uvicorn (>=0.32.0)"]
 
 [[package]]
 name = "llama-parse"
@@ -5745,4 +5750,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "d071b82aed82f3d1df1f7aa169944e76c12f5681b975ec6256459e4c063d2b84"
+content-hash = "fbf9641aa4b24a158c5ee9b0e1a06cbe6dde308a23fc73583b9cd8edf6f014a0"
