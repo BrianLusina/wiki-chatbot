@@ -523,14 +523,14 @@ files = [
 
 [[package]]
 name = "chainlit"
-version = "2.8.1"
+version = "2.8.2"
 description = "Build Conversational AI."
 optional = false
 python-versions = "<4.0.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "chainlit-2.8.1-py3-none-any.whl", hash = "sha256:be0f079c806e982f1f93d68a10e403b189980186810a1eb38d315b26c5eed502"},
-    {file = "chainlit-2.8.1.tar.gz", hash = "sha256:f6d730aa2a8d5db6444bc768b62780b49800d3b48bee465f09dc300df675358a"},
+    {file = "chainlit-2.8.2-py3-none-any.whl", hash = "sha256:cc199baebeb322da236496ebd032df86a3ded3017d40c79411f496c96b78b9a9"},
+    {file = "chainlit-2.8.2.tar.gz", hash = "sha256:b0b4bdd0ffc9bbf0e31ddde4c10441361317a2056c70051ce30179115365cbc2"},
 ]
 
 [package.dependencies]
@@ -5766,4 +5766,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "592139e153ee72b01c595598019baa3cfc223ed1d999faaa20a435872a045a72"
+content-hash = "0ec5ec9ff14784233cee12567220b13124461f9ae3774f02a3f47b3840a777d5"
