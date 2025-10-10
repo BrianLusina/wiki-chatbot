@@ -1894,53 +1894,53 @@ python-dotenv = ">=1.0.1,<2.0.0"
 
 [[package]]
 name = "llama-index"
-version = "0.14.3"
+version = "0.14.4"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index-0.14.3-py3-none-any.whl", hash = "sha256:bdfb42068712bd4c80015c4af41f3208b8b5ebb3115e438d14f56b476ac35e4c"},
-    {file = "llama_index-0.14.3.tar.gz", hash = "sha256:316b3d6d80a836f8bb59bac17af63289c022f56f3ed3ff82fb6f87bba6cf4091"},
+    {file = "llama_index-0.14.4-py3-none-any.whl", hash = "sha256:f6effb2d6c875eaf17a24353c8e7c3c5cc79990d4e30ff3a3f5dc5e14edb4b5e"},
+    {file = "llama_index-0.14.4.tar.gz", hash = "sha256:1fe9f633df313a76bb6d7cf40c3512b6324e08003130b2a38d9418d02e0bfb52"},
 ]
 
 [package.dependencies]
-llama-index-cli = ">=0.5.0,<0.6"
-llama-index-core = ">=0.14.3,<0.15"
+llama-index-cli = {version = ">=0.5.0,<0.6", markers = "python_version > \"3.9\""}
+llama-index-core = ">=0.14.4,<0.15.0"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
 llama-index-indices-managed-llama-cloud = ">=0.4.0"
-llama-index-llms-openai = ">=0.5.0,<0.6"
+llama-index-llms-openai = ">=0.6.0,<0.7"
 llama-index-readers-file = ">=0.5.0,<0.6"
 llama-index-readers-llama-parse = ">=0.4.0"
 nltk = ">3.8.1"
 
 [[package]]
 name = "llama-index-cli"
-version = "0.5.1"
+version = "0.5.3"
 description = "llama-index cli"
 optional = false
-python-versions = "<4.0,>=3.9"
+python-versions = "<4.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "llama_index_cli-0.5.1-py3-none-any.whl", hash = "sha256:5429b2fd7960df7724c2955b6e6901f6fa910b7b5ecef411c979a8b545a6b7e2"},
-    {file = "llama_index_cli-0.5.1.tar.gz", hash = "sha256:0446159d85c56c29022c1c830c9886f670d5f59d69343c3c029a3b20eda1a9d8"},
+    {file = "llama_index_cli-0.5.3-py3-none-any.whl", hash = "sha256:7deb1e953e582bd885443881ce8bd6ab2817b594fef00079dce9993c47d990f7"},
+    {file = "llama_index_cli-0.5.3.tar.gz", hash = "sha256:ebaf39e785efbfa8d50d837f60cb0f95125c04bf73ed1f92092a2a5f506172f8"},
 ]
 
 [package.dependencies]
 llama-index-core = ">=0.13.0,<0.15"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
-llama-index-llms-openai = ">=0.5.0,<0.6"
+llama-index-llms-openai = ">=0.6.0,<0.7"
 
 [[package]]
 name = "llama-index-core"
-version = "0.14.3"
+version = "0.14.4"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_core-0.14.3-py3-none-any.whl", hash = "sha256:fc4291fbae8c6609e3367da39a85a453099476685d5a3e97b766d82d4bcce5a4"},
-    {file = "llama_index_core-0.14.3.tar.gz", hash = "sha256:ca8a473ac92fe54f2849175f6510655999852c83fa8b7d75fd3908a8863da05a"},
+    {file = "llama_index_core-0.14.4-py3-none-any.whl", hash = "sha256:18aa386e0172ad6f8e855b50e36510d28d0f70f3350e7712f56cda39160697b2"},
+    {file = "llama_index_core-0.14.4.tar.gz", hash = "sha256:b47cba91d5bbbc6c73ab44b754aede84cda85c1c29ee36642f2182f0086a59d5"},
 ]
 
 [package.dependencies]
@@ -2023,19 +2023,19 @@ pydantic = ">=2.11.5"
 
 [[package]]
 name = "llama-index-llms-openai"
-version = "0.5.6"
+version = "0.6.4"
 description = "llama-index llms openai integration"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_llms_openai-0.5.6-py3-none-any.whl", hash = "sha256:a93a897fe733a6d7b668cbc6cca546e644054ddf5497821141b2d4b5ffb6ea80"},
-    {file = "llama_index_llms_openai-0.5.6.tar.gz", hash = "sha256:92533e83be2eb321d84a01a84fb2bf4506bf684c410cd94ccb29ae6c949a27d4"},
+    {file = "llama_index_llms_openai-0.6.4-py3-none-any.whl", hash = "sha256:3466d77ef1b8996605cf4fdc2dd87e0efb1e035d2a1749bcbcd688dfa36b2a0c"},
+    {file = "llama_index_llms_openai-0.6.4.tar.gz", hash = "sha256:80e2afec93f52045474492d7e577c4f51f8618d005e92c9730550323a9411f19"},
 ]
 
 [package.dependencies]
-llama-index-core = ">=0.13.0,<0.15"
-openai = ">=1.81.0,<2"
+llama-index-core = ">=0.14.3,<0.15"
+openai = ">=1.108.1,<2"
 
 [[package]]
 name = "llama-index-readers-file"
@@ -5780,4 +5780,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "ea3121ed588798c883fbdd19657babd933ed56bcac00b40d2ab4df6d41576ad5"
+content-hash = "b8cce2ba1256c5f1a09ad86a7ab71035517c6aeaef1641f2cd7a7a60534a69ec"
