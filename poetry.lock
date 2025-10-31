@@ -1882,19 +1882,19 @@ python-dotenv = ">=1.0.1,<2.0.0"
 
 [[package]]
 name = "llama-index"
-version = "0.14.5"
+version = "0.14.7"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index-0.14.5-py3-none-any.whl", hash = "sha256:578adfa9529abe702534739701fdf24abe0aa27c6faf6f9775cc8fc56cf2e19d"},
-    {file = "llama_index-0.14.5.tar.gz", hash = "sha256:f21df7c14a185d8a48fbd681d1aa8b187e6f4fb3ac7aee244ec5bc4053a57d65"},
+    {file = "llama_index-0.14.7-py3-none-any.whl", hash = "sha256:80a5a1390f49e4c059ae733a95b7449a43cf90b56dab9100d78bfa9a1963a158"},
+    {file = "llama_index-0.14.7.tar.gz", hash = "sha256:cdc269b332e7946efb6d8f13a0eb38cecdea44cd69ebfe40e7ea9c716bdb736b"},
 ]
 
 [package.dependencies]
 llama-index-cli = {version = ">=0.5.0,<0.6", markers = "python_version > \"3.9\""}
-llama-index-core = ">=0.14.5,<0.15.0"
+llama-index-core = ">=0.14.7,<0.15.0"
 llama-index-embeddings-openai = ">=0.5.0,<0.6"
 llama-index-indices-managed-llama-cloud = ">=0.4.0"
 llama-index-llms-openai = ">=0.6.0,<0.7"
@@ -1921,14 +1921,14 @@ llama-index-llms-openai = ">=0.6.0,<0.7"
 
 [[package]]
 name = "llama-index-core"
-version = "0.14.5"
+version = "0.14.7"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "llama_index_core-0.14.5-py3-none-any.whl", hash = "sha256:5445aa322b83a9d48baa608c3b920df4f434ed5d461a61e6bccb36d99348bddf"},
-    {file = "llama_index_core-0.14.5.tar.gz", hash = "sha256:913ebc3ad895d381eaab0f10dc405101c5bec5a70c09909ef2493ddc115f8552"},
+    {file = "llama_index_core-0.14.7-py3-none-any.whl", hash = "sha256:568591a27dd171f9d5299155920bfef6bac9e7fa59df200404877a57b7973765"},
+    {file = "llama_index_core-0.14.7.tar.gz", hash = "sha256:ceacf30131b84c72e4881748ef428f5392ab484adf1c0e7e0f1048b2b98eb70e"},
 ]
 
 [package.dependencies]
@@ -1941,7 +1941,7 @@ dirtyjson = ">=1.0.8,<2"
 filetype = ">=1.2.0,<2"
 fsspec = ">=2023.5.0"
 httpx = "*"
-llama-index-workflows = ">=2,<3"
+llama-index-workflows = ">=2,<2.9.0 || >2.9.0,<3"
 nest-asyncio = ">=1.5.8,<2"
 networkx = ">=3.0"
 nltk = ">3.8.1"
@@ -5772,4 +5772,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "4d118d30538143d1cb671f24d91f227b308a06f6dbf659522ab6b84b3dbe66b2"
+content-hash = "519fe32dd7cd71bf69c2fd884f8321826fa825cb273a622ee3359abea6a2826d"
