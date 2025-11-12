@@ -2,7 +2,7 @@
 version: 2
 
 updates:
-  - package-ecosystem: pip
+  - package-ecosystem: uv
     open-pull-requests-limit: 10
     directory: "/"
     schedule:
@@ -14,7 +14,5 @@ updates:
       - "dependencies"
       - "pip"
       - "python"
-    assignees:
-      - dependabot
     reviewers:
       - "BrianLusina"
