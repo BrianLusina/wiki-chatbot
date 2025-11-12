@@ -5,12 +5,11 @@ through them.
 from llama_index.readers.wikipedia import WikipediaReader
 from llama_index.core.indices.vector_store import VectorStoreIndex
 from llama_index.core.node_parser import SentenceSplitter
-from llama_index.llms.openai import OpenAI
 from llama_index.program.openai import OpenAIPydanticProgram
 
 import openai
 from pydantic import BaseModel
-from chatbot.utils import get_api_config
+from src.app.utils import get_api_config
 
 
 # define the data model in pydantic

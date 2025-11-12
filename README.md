@@ -71,14 +71,10 @@ below:
 
 3. Install `chatbot` in editable mode:
    ```shell
-   cd chatbot
+   cd src
    pip install -e .
    ```
 
 ## Execution
 
 To execute `chatbot`, go ahead and run the below command:
-
-```shell
-python chatbot --help
-```

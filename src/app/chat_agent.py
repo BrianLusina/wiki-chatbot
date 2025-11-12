@@ -3,15 +3,10 @@ This contains a script that creates a ReAct (Reason and Act) agent with a chat U
 to answer complex questions about a topic of your choice by searching the relevant Wikipedia page.
 """
 from llama_index.core.tools.query_engine import QueryEngineTool
-from llama_index.core.tools.types import ToolMetadata
 from llama_index.core.agent.react.base import ReActAgent
-from llama_index.core.chat_engine.types import AgentChatResponse
-from llama_index.llms.openai.base import OpenAI
 import chainlit as cl
-from chainlit.input_widget import Select, TextInput
+from chainlit.input_widget import Select
 import openai
-from chatbot.wikipages_indexer import create_index
-from chatbot.utils import get_api_config
 
 index = None
 agent = None

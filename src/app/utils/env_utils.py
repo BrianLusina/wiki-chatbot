@@ -3,7 +3,7 @@ Utility functions
 """
 from pathlib import Path
 from configparser import ConfigParser
-from chatbot.entities import ApiConfig, WeatherData
+from src.app.entities import ApiConfig
 
 _SECRETS_FILE = Path(__file__).parent / "secrets.ini"
 

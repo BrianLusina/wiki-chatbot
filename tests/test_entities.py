@@ -1,5 +1,5 @@
 import unittest
-from chatbot.entities import WeatherData
+from src.app.entities import WeatherData
 
 
 class WeatherDataTestCase(unittest.TestCase):
