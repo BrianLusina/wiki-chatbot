@@ -1,5 +1,5 @@
 from typing import Dict, List, Union
-from app.server.mcp.server import app
+from app.servers.mcp.server import app
 import wikipedia
 
 

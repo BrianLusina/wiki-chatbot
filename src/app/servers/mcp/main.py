@@ -1,4 +1,4 @@
-from app.server.mcp.server import app
+from app.servers.mcp.server import app
 
 
 if __name__ == "__main__":
