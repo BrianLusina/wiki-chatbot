@@ -4,17 +4,19 @@ from langchain_mcp_adapters.tools import load_mcp_tools
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import tools_condition, ToolNode
-from src.app.utils import get_api_config
-from src.app.clients.state_entity import State
+from app.utils import get_api_config
+from app.clients.mcp.state_entity import State
+from dotenv import load_dotenv
 
-api_config = get_api_config()
+load_dotenv()
+
 
 async def create_graph(session):
     # Load tools from MCP server and make them compatible with LangChain’s agent interface.
     tools = await load_mcp_tools(session)
     api_key = api_config.api_key
     # LLM configuration (system prompt can be added later)
-    llm = ChatOpenAI(model="gpt-4", temperature=0, api_key=api_key)
+    llm = ChatOpenAI(model="gpt-4", temperature=0)
     llm_with_tools = llm.bind_tools(tools)
 
     # Prompt template with user/assistant chat only

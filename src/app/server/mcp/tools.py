@@ -1,12 +1,10 @@
 from typing import Dict, List, Union
+from app.server.mcp.server import app
 import wikipedia
-from mcp.server.fastmcp import FastMCP
 
 
-mcp = FastMCP("WikipediaSearch")
 
-
-@mcp.tool()
+@app.tool()
 def fetch_wikipedia_information(query: str) -> Dict[str, str]:
     """
     Search Wikipedia for a topic and return title, summary, and URL of the best match.
@@ -36,7 +34,7 @@ def fetch_wikipedia_information(query: str) -> Dict[str, str]:
         }
 
 
-@mcp.tool()
+@app.tool()
 def list_wikipedia_sections(topic: str) -> Dict[str, Union[str, List[str]]]:
     """
     Return a list the section titles from the Wikipedia page of a given topic
@@ -52,7 +50,7 @@ def list_wikipedia_sections(topic: str) -> Dict[str, Union[str, List[str]]]:
             "error": str(error)
         }
 
-@mcp.tool()
+@app.tool()
 def get_section_content(topic: str, section_title: str) -> Dict[str, str]:
     """
     Return the content of a specific section in a Wikipedia article
@@ -71,8 +69,3 @@ def get_section_content(topic: str, section_title: str) -> Dict[str, str]:
         return {
             "error": str(error)
         }
-
-
-if __name__ == "__main__":
-    print("Starting mcp server")
-    mcp.run(transport="stdio")
