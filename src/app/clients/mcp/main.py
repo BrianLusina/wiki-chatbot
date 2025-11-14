@@ -4,6 +4,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from app.clients.mcp.tools_handler import create_graph
 from app.clients.mcp.prompts_handler import list_prompts, handle_prompt
+from app.clients.mcp.resource_handler import list_resources, handle_resource
 
 # Define server parameters (adjust the path to your server script)
 server_params = StdioServerParameters(
@@ -34,6 +35,8 @@ async def main():
             print("Type a question or use the following templates:")
             print("  /prompts                - to list available prompts")
             print("  /prompt <name> \"args\"   - to run a specific prompt")
+            print("  /resources              - to list available resources")
+            print("  /resource <name>        - to run a specific resource")
 
             while True:
                 user_input = input("\n You: ").strip()
@@ -45,6 +48,12 @@ async def main():
                     continue
                 elif user_input.startswith("/prompt"):
                     await handle_prompt(session, tools, user_input, agent)
+                    continue
+                elif user_input.startswith("/resources"):
+                    await list_resources(session)
+                    continue
+                elif user_input.startswith("/resource"):
+                    await handle_resource(session, user_input)
                     continue
 
                 try:
