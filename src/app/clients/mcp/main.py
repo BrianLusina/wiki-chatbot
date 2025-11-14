@@ -1,7 +1,9 @@
 import asyncio
+from langchain_mcp_adapters.tools import load_mcp_tools
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
-from app.clients.mcp.load_tools import create_graph
+from app.clients.mcp.tools_handler import create_graph
+from app.clients.mcp.prompts_handler import list_prompts, handle_prompt
 
 # Define server parameters (adjust the path to your server script)
 server_params = StdioServerParameters(
@@ -24,16 +26,26 @@ async def main():
             # execution.
             await session.initialize()
 
+            tools = load_mcp_tools(session)
             # We call create_graph(session) to compile the LangGraph-based agent using the initialized client session.
             agent = await create_graph(session)
 
             print("Wikipedia MCP Agent is ready")
+            print("Type a question or use the following templates:")
+            print("  /prompts                - to list available prompts")
+            print("  /prompt <name> \"args\"   - to run a specific prompt")
 
             while True:
                 user_input = input("\n You: ").strip()
 
                 if user_input.lower() in {"exit", "quit", "q"}:
                     break
+                elif user_input.startswith("/prompts"):
+                    await list_prompts(session)
+                    continue
+                elif user_input.startswith("/prompt"):
+                    await handle_prompt(session, tools, user_input, agent)
+                    continue
 
                 try:
                     # We call agent.ainvoke(...) to send the user's message into the graph.

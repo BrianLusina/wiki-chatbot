@@ -6,6 +6,8 @@ def highlight_sections_prompt(topic: str) -> str:
     """
     Identifies the most important sections from a Wikipedia article on the given topic.
     """
+    # This returned string will later be passed into the LLM from the client, where it becomes part of the reasoning
+    # process for generating a response.
     return f"""
     The user is exploring the Wikipedia article on "{topic}".
 
