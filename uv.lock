@@ -1586,14 +1586,14 @@ wheels = [
 
 [[package]]
 name = "llama-index-readers-wikipedia"
-version = "0.4.1"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "llama-index-core" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/26/ad/0d07a8614aac67de2a5084783638cc12a0ac15f5c5e2adbd5fcbad583e48/llama_index_readers_wikipedia-0.4.1.tar.gz", hash = "sha256:2d6f452e139ee45ac2651ad4d257cb51809872f9ff26564bb831978f80b4b806", size = 3905, upload-time = "2025-09-08T20:32:04.121Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5b/32/067eeb49e055a1c62bd553c7f92149dad10b0eb077492dc5b87e5eae0070/llama_index_readers_wikipedia-0.5.0.tar.gz", hash = "sha256:ea4d8480b9eada8c1c1b496a7eb138f856ed2a6ec044f10f2c9392d59af49880", size = 3903, upload-time = "2026-03-12T20:39:16.527Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e5/d7/17cd9e2ff7a9cbd0350938c42f10165ccf34cbcbb22269a3af364b9dd61f/llama_index_readers_wikipedia-0.4.1-py3-none-any.whl", hash = "sha256:dcda8310d2c6285594de2d0d4e145c2b6ac8053c80690eb5176089b32ca75012", size = 3530, upload-time = "2025-09-08T20:32:03.41Z" },
+    { url = "https://files.pythonhosted.org/packages/3b/f8/970e7d32e991420e2d9b68843ee8acaa192c510012b83a259291fcdf259b/llama_index_readers_wikipedia-0.5.0-py3-none-any.whl", hash = "sha256:959a8691a7a776e28a3056f8abc3f081c4707e23e231b154a9f241e461b0070b", size = 3527, upload-time = "2026-03-12T20:39:17.396Z" },
 ]
 
 [[package]]
