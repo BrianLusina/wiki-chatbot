@@ -379,7 +379,7 @@ wheels = [
 
 [[package]]
 name = "chainlit"
-version = "2.10.1"
+version = "2.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -407,9 +407,9 @@ dependencies = [
     { name = "uvicorn" },
     { name = "watchfiles" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b6/59/769c531dfb3e83b90bb516154222fb443b1cd3ee9b7b84d3aabd1abb93cd/chainlit-2.10.1.tar.gz", hash = "sha256:1fe0719b52229245c6eb1dd4fbed1d6f65971b7ca3548b29ce2466f9a3a64a96", size = 10315808, upload-time = "2026-03-27T07:27:03.288Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/27/1f/74ff98dbb274cf13bda854e97953e0dec64498046e8aa0e2702d61b8bad8/chainlit-2.11.0.tar.gz", hash = "sha256:130a0500cb94ac1eb98d27bda9eba1bf5f8094068359a151cb03644ab8a1e8bc", size = 11611087, upload-time = "2026-04-07T23:07:46.577Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d2/e8/3ff388ff0bb49fea25bc1c8625f480de161e7516257077b91549b9a9a295/chainlit-2.10.1-py3-none-any.whl", hash = "sha256:5ea30ffbf7fc888436f0f56bec5d6b864b6854ac56e4b564039681b1f51fdc1f", size = 10062739, upload-time = "2026-03-27T07:27:00.449Z" },
+    { url = "https://files.pythonhosted.org/packages/00/92/198fa63cffeabf748e4298ca08d86b1ab170a2f0b349b327d8e5d8393aef/chainlit-2.11.0-py3-none-any.whl", hash = "sha256:d7e882e9094f5847c67404e1dfd93b1825c16544d9536eed4d553c862497d078", size = 11314948, upload-time = "2026-04-07T23:07:44.006Z" },
 ]
 
 [[package]]
