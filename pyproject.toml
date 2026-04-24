@@ -18,7 +18,7 @@ dependencies = [
     "pydantic>=2.13.1",
     "chainlit>=2.9.0",
     "llama-index-readers-wikipedia>=0.4.1",
-    "llama-index>=0.14.8",
+    "llama-index>=0.14.21",
 ]
 
 [dependency-groups]
