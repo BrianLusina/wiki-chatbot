@@ -16,7 +16,7 @@ dependencies = [
     "langchain-mcp-adapters>=0.1.12",
     "openai>=2.32.0",
     "pydantic>=2.13.1",
-    "chainlit>=2.9.0",
+    "chainlit>=2.11.1",
     "llama-index-readers-wikipedia>=0.4.1",
     "llama-index>=0.14.8",
 ]
